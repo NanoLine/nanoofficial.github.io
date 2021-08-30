@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+<!--Showcase-->
+<section class="text-light bg-dark text-center text-sm-start p-5">
+    <div class="container d-sm-flex">
+      <div>
+        <h1>
+          Become a NanoDeveloper
+        </h1>
+        <p class="lead">
+          What is <span class="text-warning">NanoDeveloper</span>? NanoDeveloper is a developer at <span class="text-warning">NanoLine</span>. NanoDevelopers are also data scientists, web developers.
+        </p>
+        <button class="btn btn-success">Become a NanoDeveloper</button>
+      </div>
+      <img src="https://th.bing.com/th/id/R.564bc96020c5b637f28636dfdb9d0636?rik=AweUc1jPZi4MhA&pid=ImgRaw&r=0" alt="NanoDevelopment" class="image-fluid w-50 d-none d-md-block">
+    </div>
+</section>
+<!--Subscribe-->
+<section class="bg-primary p-5 text-light">
+    <div class="container">
+      <h3 class="m-3">
+        Subscribe us!
+      </h3>
+      <div class="input-group my_input">
+        <input type="text" class="form-control" placeholder="E-mail">
+        <button class="btn btn-success" type="button">Subscribe</button>
+      </div>
+    </div>
+</section>
+<section class="accordion accordion-flush p-5" id="FAQ">
+    <h1 class="text-center p-3">
+        Frequently Asked Questions
+    </h1>
+    <div class="container">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+            When was NanoLine created?
+          </button>
+        </h2>
+        <div class="accordion-collapse collapse" id="q1">
+          <div class="accordion-body">
+            <p class="lead">NanoLine was created in <span class="text-warning">2021</span> in Ganja, Azerbaijan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+            Who was created NanoLine?
+          </button>
+        </h2>
+        <div class="accordion-collapse collapse" id="q2">
+          <div class="accordion-body">
+            <p class="lead">
+              <span class="text-warning">Ahmet Kamberli</span> was created NanoLine
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+            Where was created NanoLine?
+          </button>
+        </h2>
+        <div class="accordion-collapse collapse" id="q2">
+          <div class="accordion-body">
+            <p class="lead">
+              NanoLine was created in <span class="text-warning">Azerbaijan</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
